@@ -41,7 +41,11 @@ def total_even_pairs(src)
   total_evens = 0
   i = 0
   while i < src.count do
-    total_evens << (src[i][0]%2 == 0 && src[i][1]%2 == 0 ? src[i][0]+src[i][1] : "")
+    if (src[i][0]%2 == 0) && (src[i][1]%2 == 0)
+      total_evens += (src[i][0] + src[i][0])
+
+    end
+(src[i][0]%2 == 0 && src[i][1]%2 == 0 ? src[i][0]+src[i][1] : "")
     i += 1
     end
     total_evens
